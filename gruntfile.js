@@ -28,6 +28,17 @@ module.exports = function(grunt) {
       }
     },
 
+    browserSync: {
+        bsFiles: {
+            src : 'assets/css/*.css'
+        },
+        options: {
+            server: {
+                baseDir: "./"
+            }
+        }
+    }
+
 
   });
 
@@ -41,5 +52,5 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ["jshint", "sass", "watch"]);
+  grunt.registerTask('default', ["jshint", "sass", "watch", "browserSync"]);
 };
