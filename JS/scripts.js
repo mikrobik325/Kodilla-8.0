@@ -1,15 +1,13 @@
-// scripts.js file
+// skrypt oblicz pole trójkąta
 
-// wyświetla okno z polem do uzupełnienia
+// pobieranie od użytkowanika wartości boku i wysokości trójkąta
+var a = prompt('podaj długość podstawy trójkąta \"a"');
+var h = prompt('podaj wysokość trójkąta \"h"');
 
-var name = prompt('Enter your name');
-alert('Hello, ' + name);
-console.log('Hello, ' + name);
+// wzór na pole trójkąta
+triangleArea = ((a * h) / 2);
 
+//okno dialogowe z podanym wynikiem
+alert('Pole trójkata wynosi: ' + (a * h) / 2);
 
-//to ponieżej to nie wiem co ma robić
-
-/*
-var variable = 'test';
-console.log(variable);
-*/
+console.log('Pole trójkąta o długości podstawy a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
